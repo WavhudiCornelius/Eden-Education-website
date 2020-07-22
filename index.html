@@ -10,8 +10,8 @@
 <body>
     <div class="teacher-section login-content" id="T-sec">
         <div class="btn-section">
-            <button class="T-btn" onclick="myTeacher()">Teacher</button>
-            <button class="L-btn" onclick="myLearner()">Learner</button>
+            <button id="T-btn" class="tab-item active" onclick="myTeacher()">Teacher</button>
+            <button id="L-btn" class="tab-item" onclick="myLearner()">Learner</button>
         </div>
         <form action="index.html">
             <div class="avatar-container">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <a href="#" class="password_link">Forgot Password?</a>
-            <input type="submit" class="btn teacher-btn" value="Login">
+            <input type="submit" class="btn teacher-btn" id="mobi-btn" value="Login">
         </form>
     </div>
     <div class="learner-section login-content">

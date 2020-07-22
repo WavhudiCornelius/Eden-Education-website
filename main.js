@@ -26,16 +26,35 @@ inputs.forEach(input => {
 // to change the selection
 function myTeacher() {
 	let heading = document.getElementById("heading_changer");
-	let background = document.getElementById("T-sec");
+	let button = document.getElementById("mobi-btn");
+	let teacherButton = document.getElementById("T-btn");
+	let learnerButton = document.getElementById("L-btn");
 
 	heading.innerHTML = "Teacher Login";
-	background.style.background = "#fff";
+	
+	// changing the login buttons color styles
+	button.classList.remove("learner-btn");
+	button.classList.add("teacher-btn");
+	
+	// changing the teacher and learner button styles depending on which is selected
+	teacherButton.classList.add("active");
+	learnerButton.classList.remove("active");
 }
 
 function myLearner() {
 	let heading = document.getElementById("heading_changer");
-	let background = document.getElementById("T-sec");
+	let button = document.getElementById("mobi-btn");
+	let teacherButton = document.getElementById("T-btn");
+	let learnerButton = document.getElementById("L-btn");
 
 	heading.innerHTML = "Learner Login";
-	background.style.background = "#F8F7F7";
+	
+	// changing the login buttons color styles
+	button.classList.add("learner-btn");
+	button.classList.remove("teacher-btn");
+
+	// changing the teacher and learner button styles depending on which is selected
+	teacherButton.classList.remove("active");
+	learnerButton.classList.add("active");
+
 }
