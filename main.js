@@ -21,3 +21,21 @@ inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
 });
+
+// handling the pressing of teacher and learner buttons in mobile
+// to change the selection
+function myTeacher() {
+	let heading = document.getElementById("heading_changer");
+	let background = document.getElementById("T-sec");
+
+	heading.innerHTML = "Teacher Login";
+	background.style.background = "#fff";
+}
+
+function myLearner() {
+	let heading = document.getElementById("heading_changer");
+	let background = document.getElementById("T-sec");
+
+	heading.innerHTML = "Learner Login";
+	background.style.background = "#F8F7F7";
+}
